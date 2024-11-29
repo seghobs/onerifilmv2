@@ -3,7 +3,7 @@ import { MovieResponse, ApiError } from "./types/movie";
 import { createApiError, isValidMovieResponse } from "./utils/error-handler";
 import { getMoviePoster } from "./tmdb";
 
-const genAI = new GoogleGenerativeAI("AIzaSyBNprZNQfMuUg2U8Sfybp3EXTivFmgMfHI");
+const genAI = new GoogleGenerativeAI("Buraya gemini  api  token gir.......");
 
 export async function getMovieRecommendations(preferences: string): Promise<MovieResponse> {
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
